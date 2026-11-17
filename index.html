@@ -3,99 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nyos3s Kimdir? Siber güvenlik araştırmacısı, Python geliştiricisi ve RF sinyal analizcisi Nyos3s'ün resmi portfolyo ve bilgi sitesi.">
+    <meta name="description" content="Nyos3s Kimdir? Siber güvenlik araştırmacısı, RF sinyal analizcisi ve Python geliştiricisi Nyos3s hakkında kapsamlı portfolyo ve bilgi sitesi.">
     <title>Nyos3s | Siber Güvenlik Araştırmacısı & Geliştirici</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;800&display=swap');
+
         :root {
-            --bg-color: #0d1117;
-            --card-bg: #161b22;
+            --bg-color: #050508;
+            --card-bg: rgba(13, 17, 23, 0.75);
             --text-color: #c9d1d9;
-            --accent-color: #58a6ff;
-            --border-color: #30363d;
+            --accent-cyan: #00ffcc;
+            --accent-blue: #58a6ff;
+            --accent-purple: #bc8cff;
+            --border-color: rgba(48, 54, 61, 0.8);
+            --glow-shadow: 0 0 20px rgba(0, 255, 204, 0.15);
         }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: 'Inter', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
+            min-height: 100vh;
+            overflow-x: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            padding: 40px 20px;
+            position: relative;
         }
-        .container {
-            max-width: 750px;
-            width: 100%;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 40px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-        }
-        h1 {
-            color: var(--accent-color);
-            font-size: 2.2rem;
-            margin-bottom: 10px;
-        }
-        .tagline {
-            font-size: 1.1rem;
-            color: #8b949e;
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 15px;
-        }
-        h2 {
-            font-size: 1.4rem;
-            color: #e6edf3;
-            margin-top: 25px;
-            border-left: 4px solid var(--accent-color);
-            padding-left: 10px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        .links {
-            margin-top: 30px;
-            display: flex;
-            gap: 15px;
-        }
-        .btn {
-            background-color: #238636;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.2s;
-        }
-        .btn:hover {
-            background-color: #2ea043;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Nyos3s Kimdir?</h1>
-        <div class="tagline">0x / Siber Güvenlik Araştırmacısı & Yazılım Geliştirici</div>
-        
-        <p>Merhaba! Ben <strong>Nyos3s</strong>. Dijital sistemlerin güvenliği, yazılım mimarileri ve donanım protokolleri üzerine çalışmalar yürüten bağımsız bir geliştiriciyim.</p>
-        
-        <h2>Odak Alanlarım</h2>
-        <ul>
-            <li><strong>Siber Güvenlik & CTF:</strong> Ağ analizi, zafiyet değerlendirmeleri ve sızma testi çalışmaları.</li>
-            <li><strong>RF Sinyal Analizi:</strong> Kablosuz frekanslar, ESP32 donanım protokolleri ve sinyal testleri.</li>
-            <li><strong>Yazılım Geliştirme:</strong> Süreçleri hızlandırmak için Python tabanlı otomasyon araçları ve betikler.</li>
-        </ul>
 
-        <h2>Bağlantılarım</h2>
-        <div class="links">
-            <a href="https://github.com/nyos3s" class="btn" target="_blank">GitHub Profilim</a>
-        </div>
-    </div>
-</body>
-</html>
+        /* Arka Plan Hareketli Grid ve Parıltı Efekti */
+        body::before {
+            content: '';
+            position: absolute;
+            width: 200vw;
+            height: 200vh;
+            background-image: radial-gradient(circle, rgba(0, 255, 204, 0.08) 1px, transparent 1px);
+            background-size: 35px 35px;
+            animation: gridMove 25s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-35px, -3
